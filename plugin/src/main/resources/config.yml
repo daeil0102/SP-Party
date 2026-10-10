@@ -1,0 +1,4 @@
+proxy:
+  enabled: true
+party:
+  max-size: 8

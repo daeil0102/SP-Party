@@ -1,0 +1,23 @@
+name: '${name}'
+version: '${version}'
+main: net.teujaem.spparty.Main
+api-version: '${spigot_api_version}'
+depend: [SP-Framework]
+softdepend: [SP-ProxyData]
+authors: [Teujaem]
+description: SP-Framework ProxyData 기반 크로스 서버 파티 시스템
+commands:
+  party:
+    description: 파티를 생성하고 관리합니다.
+    usage: /파티 도움말
+    aliases: [파티]
+    permission: spparty.use
+  pc:
+    description: 파티 채팅 전송 또는 채팅 모드 전환
+    usage: /pc [메시지]
+    aliases: [파티채팅]
+    permission: spparty.use
+permissions:
+  spparty.use:
+    description: SP-Party 명령어 사용 권한
+    default: true
